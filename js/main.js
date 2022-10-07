@@ -25,9 +25,9 @@ if(document.querySelector(".statistics__aside")) {
   });
 }
 
-$('path').hover(function(e){
+$('.russia_map path').hover(function(e){
 
-    $('path').css('fill','#FFFFFF');
+    $('.russia_map path').css('fill','#FFFFFF');
     $('.indicator').html('');
     var id = $(this).attr('id').toUpperCase();
   
@@ -56,7 +56,7 @@ $('path').hover(function(e){
     //script.src = 'http://api.geonames.org/countryInfoJSON?country='+info[id]+'&username=pixeltest&style=full&callback=update';
     document.body.appendChild(script);
     $(this).css({"fill": "#EEEEEE", "stroke": "#FE5555"});
-    $('path').not(this).css('fill','#FFFFFF');
+    $('.russia_map path').not(this).css('fill','#FFFFFF');
     $('.indicator').css({'top':e.pageY,'left':e.pageX+30}).show();
   
   
@@ -64,7 +64,7 @@ $('path').hover(function(e){
   },function(){
     $('.indicator').html('');
     $('.indicator').hide();
-    $('path').css({"fill": "#FFFFFF", "stroke": "thistle"});
+    $('.russia_map path').css({"fill": "#FFFFFF", "stroke": "thistle"});
   });
   
   
@@ -162,7 +162,7 @@ $('path').hover(function(e){
   
     );
   
-  $('path').each(function() {
+  $('.russia_map path').each(function() {
   
     var regId = $(this).attr('id');
     var flag = '';
@@ -220,7 +220,7 @@ $('path').hover(function(e){
   },function(){
     $('.indicator').html('');
     $('.indicator').hide();
-    $('path').css('fill','rgba(0,0,0,0.2)');
+    $('.russia_map path').css('fill','rgba(0,0,0,0.2)');
   });
   
   //} // revertFill
