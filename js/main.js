@@ -24,6 +24,16 @@ if(document.querySelector(".statistics__aside")) {
     $(".statistics__aside").removeClass("open");
   });
 }
+if(document.querySelector(".page-link")) {
+  $(function(){
+    $('.page-link').click(function(){
+         var target = $(this).attr('href');
+         $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+         return false; 
+    }); 
+  });
+}
+
 
 $('.russia_map path').hover(function(e){
 
