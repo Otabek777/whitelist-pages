@@ -2256,38 +2256,16 @@ body {
             align-items: flex-start;
     padding-left: 0;
     border-bottom: 1px solid #C0C0C0;
-    position: relative;
-    padding-left: 25px;
-  }
-
-  .loc_table1 .block::after {
-    content: "";
-    width: 1px;
-    height: 100%;
-    background: #C0C0C0;
-    position: absolute;
-    top: 0;
-    right: 110px;
-  }
-
-  .loc_table1 .block::before {
-    content: "";
-    width: 1px;
-    height: 100%;
-    background: #C0C0C0;
-    position: absolute;
-    top: 0;
-    right: 230px;
   }
 
   .loc_table1 .block .num {
     position: absolute;
-    top: 0;
-    left: 0;
+    z-index: 1;
+    height: 50px;
+    border-bottom: 1px solid #c0c0c0;
   }
 
   .loc_table1 .num {
-    height: 100%;
     min-width: 25px;
     width: 25px;
     margin-right: 0;
@@ -2303,9 +2281,15 @@ body {
   .loc_table1 .block .company {
     min-width: 117px;
     width: 117px;
-    height: 100%;
+    height: 50px;
     padding: 9px 0;
     background: #F2F7FD;
+    position: absolute;
+    z-index: 1;
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
+    border-bottom: 1px solid #c0c0c0;
+    border-right: 0 !important;
   }
 
   .loc_table1 .block .company a, .loc_table1 .block .company p {
@@ -2326,13 +2310,14 @@ body {
             align-items: flex-start;
     height: 100%;
     padding-left: 0;
-    min-width: 116px;
-    width: 116px;
+    min-width: 114px;
+    width: 114px;
     border: 0 !important;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     font-size: 13px;
+    margin-left: 143px;
   }
 
   .loc_table1 .block .price2 {
@@ -2345,10 +2330,12 @@ body {
         -ms-flex-align: start;
             align-items: flex-start;
     font-size: 13px;
+    border-left: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
   }
 
   .loc_table1 .price2 {
-    width: 120px;
+    width: 121px;
     min-width: 120px;
     padding: 0;
   }
@@ -2425,46 +2412,25 @@ body {
   }
 
   .loc_table2 .block {
-    height: auto;
+    height: 50px;
+    overflow: hidden;
     min-width: 558px;
     padding-left: 0;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    position: relative;
-    padding-left: 25px;
     border-bottom: 1px solid #C0C0C0;
   }
 
-  .loc_table2 .block::after {
-    content: "";
-    width: 1px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 120px;
-    background: #C0C0C0;
-  }
-
-  .loc_table2 .block::before {
-    content: "";
-    width: 1px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 270px;
-    background: #C0C0C0;
-  }
-
   .loc_table2 .block .num {
-    height: 100%;
+    height: 50px;
     position: absolute;
-    top: 0;
-    left: 0;
+    z-index: 1;
     padding-top: 8px;
     background: #F2F7FD;
     font-size: 12px;
     line-height: 16px;
+    border-bottom: 1px solid #C0C0C0;
   }
 
   .loc_table2 .top .num {
@@ -2474,7 +2440,7 @@ body {
   .loc_table2 .top .city {
     min-width: 143px;
     width: 143px;
-    height: 100%;
+    height: 44px;
     padding-left: 0;
     border: 0;
     -webkit-box-align: center;
@@ -2484,6 +2450,9 @@ body {
     border-right: 1px solid #D8E2EA;
     padding-left: 18px;
     padding-right: 10px;
+    position: absolute;
+    z-index: 1;
+    background: #002B6E;
   }
 
   .loc_table2 .top .middle {
@@ -2491,6 +2460,7 @@ body {
     padding: 0;
     border: 0;
     border-right: 1px solid #D8E2EA;
+    margin-left: 143px;
   }
 
   .loc_table2 .top .all {
@@ -2519,9 +2489,8 @@ body {
   }
 
   .loc_table2 .block .all {
-    min-width: 152px;
-    width: 152px;
-    border: 0 !important;
+    min-width: 151px;
+    width: 151px;
   }
 
   .loc_table2 .share {
@@ -2538,7 +2507,8 @@ body {
   .loc_table2 .block .city {
     min-width: 118px;
     width: 118px;
-    height: 100%;
+    height: 50px;
+    overflow: hidden;
     padding: 0;
     border: 0;
     padding: 9px 0;
@@ -2546,18 +2516,30 @@ body {
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
+    position: absolute;
+    z-index: 1;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-transform: translateX(25px);
+            transform: translateX(25px);
+    border-bottom: 1px solid #C0C0C0;
   }
 
   .loc_table2 .block .middle {
     height: 100%;
     border: 0;
     font-size: 13px;
+    margin-left: 143px;
   }
 
   .loc_table2 .block .all {
     height: 100%;
     border: 0;
     font-size: 13px;
+    border-left: 1px solid #c0c0c0;
+    border-right: 1px solid #c0c0c0;
+    border-bottom: 0 !important;
   }
 
   .loc_table2 .block .share {
@@ -2674,5 +2656,30 @@ body {
 
   .changes .paginator {
     margin-top: 20px;
+  }
+
+  .loc_table1 .top .price {
+    margin-left: 143px;
+  }
+
+  .loc_table1 .top .company {
+    height: 46px;
+    position: absolute;
+    z-index: 1;
+    background: #002B6E;
+  }
+
+  .loc_table1 .block {
+    height: 50px;
+    overflow: hidden;
+  }
+  .loc_table1 .block .company {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .loc_table1 .block .company a, .loc_table1 .block .company p {
+    height: 33px;
+    overflow: hidden;
   }
 }
