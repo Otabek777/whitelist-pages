@@ -1219,10 +1219,15 @@ body {
   width: 247px;
   padding-left: 32px;
 }
-.loc_table2 .city a {
+.loc_table2 .city a, .loc_table2 .city p {
   display: block;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  color: #002B6F;
 }
 .loc_table2 .city a:hover {
   color: #FE5555 !important;
